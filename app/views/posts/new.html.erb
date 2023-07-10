@@ -1,0 +1,11 @@
+<h1>New Post</h1>
+<%= form_for(@post) do |f| %>
+  <%= f.label :title %><br />
+  <%= f.text_field :title %><br />
+ 
+  <%= f.label :text %><br />
+  <%= f.text_area :text %><br />
+  
+  <%= f.submit %>
+<% end %>
+<%= link_to "Voltar", posts_path %>
